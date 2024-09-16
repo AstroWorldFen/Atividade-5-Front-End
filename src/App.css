@@ -1,0 +1,249 @@
+/* Estilos globais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef; /* Cor de fundo mais clara */
+  color: #343a40; /* Cor do texto */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Estilos para Titulo */
+.Titulo {
+  margin-bottom: 2rem;
+}
+
+.Titulo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff; /* Azul vibrante */
+}
+
+.Titulo button {
+  background-color: #007bff; /* Azul */
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Titulo button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Estilos para Eventoboton */
+.Eventoboton button {
+  background-color: #28a745; /* Verde */
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Eventoboton button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Estilos para Parametro */
+.Parametro button {
+  background-color: #007bff; /* Azul */
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Parametro button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Estilos para Onclick */
+.Onclick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Onclick div, .Onclick button {
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Onclick div:hover, .Onclick button:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para Onchange */
+.Onchange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Onchange input, .Onchange textarea, .Onchange select {
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.Onchange input:focus, .Onchange textarea:focus, .Onchange select:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.Onchange textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Para garantir que todos os elementos tenham o mesmo tamanho máximo e alinhamento */
+.Onchange select {
+  max-width: 400px;
+}
+
+/* Estilos para Onsub */
+.Onsub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Onsub form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Onsub input[type="text"] {
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.Onsub input[type="text"]:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.Onsub input[type="submit"] {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Onsub input[type="submit"]:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Estilos para o componente FocusExemplo */
+.FocusExemplo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FocusExemplo input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.FocusExemplo input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.FocusExemplo p {
+  margin: 0.5em 0;
+  color: #666;
+}
+
+/* Estilos para o componente Eventos */
+.Eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Eventos button {
+  background-color: #f4b400; /* Amarelo */
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(244, 180, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Eventos button:hover {
+  background-color: #f2a300;
+  transform: scale(1.05);
+}
